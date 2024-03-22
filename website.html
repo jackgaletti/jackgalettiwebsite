@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Galetti</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d8d6c7;
+        }
+        header {
+            background-color: #E6E6DA;
+            color: #CD3c2a;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #CD3c2a;
+            text-decoration: none;
+            padding: 0 20px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #3D405B;
+        }
+        section {
+            padding: 50px;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+        #JackGaletti {
+            display: flex;
+            align-items: flex-start;
+        }
+        #JackGaletti > div {
+            flex: 1;
+        }
+        .split-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            overflow: auto;
+        }
+
+.right-section {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 20px;
+    margin-left: 50%;
+}
+    </style>
+</head>
+<body>
+    <header style="padding: 22px;">
+        <nav><a href="#" onclick="sendEmail()">Jack Galetti</a></nav>
+        <nav style="margin-right: 50px";>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <div class="split-container">
+        <div class="left-section">
+            <section id="JackGaletti">
+                <img src="jackgaletti.jpg" alt="Jack Galetti">
+                <div>
+                    <h2>Hi! I'm <span style="color: #CD3c2a;">Jack Galetti</span>.</h2>
+                    <p>Aspiring software <span style="color: #CD3c2a;">engineer</span><br>and full-stack <span style="color: #CD3c2a;">developer</span>,<br>current <span style="color: #CD3c2a;">EECS student</span> at UC Berkeley.</p>
+                    <p>I am especially interested in and currently<br>pursuing <span id="typingAnimation" style="color: #CD3c2a;"></span></p>
+                    <p id="email" style="display:none;">You can reach me by email at <span style="color: #CD3c2a;">jackcgaletti@gmail.com</span></p>
+                    <h4>Let's connect!</h4>
+                    <div style="margin-top: -17px; display: flex;">
+                        <a href="https://www.linkedin.com/in/jackgaletti2004" target="_blank">
+                            <img src="linkedin.png" alt="LinkedIn" style="width: 25px; height: 25px; margin-right: 5px;">
+                        </a>
+                        <a href="mailto:jackcgaletti@gmail.com">
+                            <img src="email.png" alt="Icon 1" style="width: 25px; height: 25px; margin-right: 5px;">
+                        </a>
+                        <a href="https://drive.google.com/file/d/1OLXXw6Dh0a5WCCfNXOXOI7P_HxGGlPJc/view?usp=sharing" target="_blank">
+                            <img src="resume.png" alt="Icon 2" style="width: 23px; height: 23px;">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <div class="right-section">
+            <section id="about">
+                <h2 style="margin-top: 60px";>About</h2>
+                <p>I am a second year electrical engineering and computer science student at the University of California, Berkeley, originally from Palo Alto, CA. 
+                    I am passionate about designing and building both web and mobile apps, as well as continuing to learn about and expand my knowledge 
+                    across various domains of software engineering. I have pursued multiple research positions while 
+                    at Berkeley, specifically in machine learning and aerospace, and I am currently an intern with a startup as a full-stack engineer with a focus 
+                    in frontend development and artificial intelligence.</p>
+            </section>
+            <section id="experience">
+                <h2 style="margin-top: -80px";>Experience</h2>
+                <h4><span style="color: #CD3c2a;">Software Engineer Intern</span><p style="display: inline;"> &bull; Glocal (Feb. 2024 - Present)<br></h4>
+                <p style="margin-top: -17px";>Enhance Glocal's web and mobile applications using Groovy, Grails, JavaScript, and React Native. I refine the user interface for scalability, contributing to the development of Glocal's AI algorithm for personalized recommendations, collaborating on feature implementation with the backend team, conducting biweekly code reviews, and ensuring a smooth user experience through bug fixes and performance optimizations. I additionally document technical processes for internal knowledge sharing.</p>
+                <h4><span style="color: #CD3c2a;">Software Engineering Researcher</span> &bull; VTOL at Berkeley (Sept. 2023 - Jan. 2024)<br></h4>
+                <p style="margin-top: -17px";>Contributed to the development of UC Berkeley's first-generation, human-carrying electric vertical take-off and landing vehicle as a member of the software 
+                    team by developing, implementing, and testing code and fostering cross-functional collaboration to seamlessly integrate our software across teams.</p>
+                <h4><span style="color: #CD3c2a;">Research Assistant</span> &bull; Nanotechnology Laboratory (Jan. 2023 - Sept. 2023)<br></h4>
+                <p style="margin-top: -17px";>Research assistant for software division of a UC Berkeley nanotechnology laboratory involving energy efficiency, biosensing, and biomedicine; contributed to the development of a machine learning system for data analysis and outcome prediction in projects with partners including Volvo, NASA Ames, and UCSF Children’s Hospital.</p>
+            </section>
+            <section id="education">
+                <h2 style="margin-top: -80px";>Education</h2>
+                <h4><span style="color: #CD3c2a;">University of California, Berkeley</span> &bull; 2022-26<br></h4>
+                <p style="margin-top: -17px";>Electrical Engineering and Computer Science (BS)<br></p>
+            </section>
+            <section id="projects">
+                <h2 style="margin-top: -80px";>Projects</h2>
+                <p><span style="color: #CD3c2a; font-weight: bold;">NGram:</span> Replicated Google’s Ngram Viewer in Java using HashMaps, Collections, Iterators, and the Princeton Algorithms Library for reading, parsing, and converting files to track history of word usage.<br></p>
+                <p><span style="color: #CD3c2a; font-weight: bold;">WordNet:</span> Built a visual and numerical model of hyponym and hypernym correlations and tracked word tree lineage in Java, using Directed Acyclic Graphs, HashSets, and ArrayLists, as well as algorithms including depth-first search graph traversal and weighted quick union.<br></p>
+                <p><span style="color: #CD3c2a; font-weight: bold;">2D World Generation:</span> Designed and implemented the game functionality, UI, and data storage of a 2D tile-based, user-interactive world exploration engine in Java that uses pseudo-random algorithms to generate custom worlds and gameplay.<br></p>
+                <p><span style="color: #CD3c2a; font-weight: bold;">Scheme:</span> Implemented the core features for a lisp interpreter in Python using a recursive descent parser, utilizing lexical and syntactic analysis as well as input parsing.<br></p>
+                <p><span style="color: #CD3c2a; font-weight: bold;">Arcade Games:</span> Built fully rendered replications of the classic puzzle games 2048 and Tetris in Java that incorporate user data storage for scores, responsive user controls through keyboard inputs (WASD, UDLR), and various Java data structures and algorithms for game logic.<br></p>
+                <p><span style="color: #CD3c2a; font-weight: bold;">Website:</span> Built using HTML, CSS, and GitHub Pages.</p>
+
+            </section>
+            <section id="skills">
+                <h2 style="margin-top: -80px";>Skills</h2>
+                <p><span style="color: #CD3c2a; font-weight: bold;">Languages:</span> Python, Java, C/C++, SQL, RISC-V, Swift, HTML, JavaScript, CSS<br></p>
+                <p><span style="color: #CD3c2a; font-weight: bold;">Developer Tools:</span> Git, Google Cloud, VS Code, IntelliJ, Xcode, Figma, SwiftUI<br></p>
+                <p><span style="color: #CD3c2a; font-weight: bold;">Libraries:</span> NumPy, Matplotlib, pandas, React</p>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        var words = ["web development.", "software engineering.", "artificial intelligence.", "machine learning.", "web design."];
+        var wordIndex = 0;
+        var typingSpeed = 115; // in milliseconds
+        var deleteSpeed = 75; // in milliseconds
+        var typingAnimation = document.getElementById("typingAnimation");
+        var isTyping = true;
+
+        function typeWriter() {
+            if (isTyping) {
+                var word = words[wordIndex];
+                var i = 0;
+                var typingInterval = setInterval(function() {
+                    typingAnimation.innerHTML += word.charAt(i);
+                    i++;
+                    if (i > word.length) {
+                        clearInterval(typingInterval);
+                        isTyping
+                        isTyping = false;
+                        setTimeout(deleteWord, 1000); // hold for 1 second
+                    }
+                }, typingSpeed);
+            }
+        }
+
+        function deleteWord() {
+            var word = words[wordIndex];
+            var i = word.length - 1;
+            var deleteInterval = setInterval(function() {
+                var currentText = typingAnimation.innerHTML;
+                typingAnimation.innerHTML = currentText.slice(0, -1);
+                i--;
+                if (i < 0) {
+                    clearInterval(deleteInterval);
+                    wordIndex = (wordIndex + 1) % words.length;
+                    isTyping = true;
+                    setTimeout(typeWriter, 200); // delay before typing next word
+                }
+            }, deleteSpeed);
+        }
+
+        typeWriter(); // start typing animation initially
+
+        function showEmail() {
+            var emailButton = document.querySelector("button");
+            var emailText = document.getElementById("email");
+            if (emailText.style.display === "none") {
+                emailText.style.display = "block";
+                emailButton.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // Smooth scroll to the target section with adjusted offset
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var headerHeight = document.querySelector('header').offsetHeight;
+                var subheaderOffset = 80;
+                var targetOffset = section.offsetTop - headerHeight - subheaderOffset;
+                window.scrollTo({
+                    top: targetOffset,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    
+        // Add event listeners to the navigation links to scroll to the corresponding sections
+        document.addEventListener('DOMContentLoaded', function() {
+            var navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var sectionId = this.getAttribute('href').substring(1);
+                    scrollToSection(sectionId);
+                });
+            });
+        });
+        function sendEmail() {
+            window.location.href = "mailto:jackcgaletti@gmail.com";
+        }
+    </script>
+</body>
+</html>
+
+
+                    
