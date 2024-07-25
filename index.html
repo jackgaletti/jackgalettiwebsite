@@ -181,22 +181,6 @@
         </div>
     </div>
 
-    <div id="mobileViewMessage" class="mobile-view-message">
-        For the best experience, please view this website on a desktop.
-    </div>
-
-    <script>
-        function isMobileDevice() {
-            return /Mobi|Android/i.test(navigator.userAgent);
-        }
-
-        window.onload = function() {
-            if (isMobileDevice()) {
-                document.getElementById('mobileViewMessage').style.display = 'flex';
-            }
-        };
-    </script>
-
     <script>
         var words = ["web development.", "software engineering.", "artificial intelligence.", "machine learning.", "research.", "data science."];
         var wordIndex = 0;
