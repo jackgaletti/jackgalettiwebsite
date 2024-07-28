@@ -36,9 +36,6 @@
             padding: 0 20px;
             transition: all 0.3s ease;
         }
-        nav a:hover {
-            color: #3D405B;
-        }
         section {
             padding: 50px;
         }
@@ -90,8 +87,8 @@
         <nav><a href="#" onclick="sendEmail()" style="font-weight: bold; font-size: 1.2em;">Jack Galetti</a></nav>
         <nav style="margin-right: 50px";>
             <a href="#about">About</a>
-            <a href="#experience">Experience</a>
             <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
         </nav>
@@ -128,14 +125,21 @@
         <div class="right-section">
             <section id="about">
                 <h2 style="margin-top: 60px";>About</h2>
-                <p>Thank you so much for visiting my website! I am a third year Electrical Engineering and Computer Science student at the University of California, Berkeley, originally from Palo Alto, CA. 
+                <p>I am a third year Electrical Engineering and Computer Science student at the University of California, Berkeley, originally from Palo Alto, CA. 
                     I am passionate about and interested in pursuing software engineering, and I am committed to expanding my knowledge 
                     across its various domains, both inside and outside of the classroom. I have engaged in a number of personal and extracurricular 
                     SWE-related positions throughout my time at Berkeley in an effort to find my specific interests and niche within the industry; this includes participating in research at the intersection of biomedicine 
-                    and technology, exploring aerospace, app development, and machine learning, and interning at Chicago-based startup Glocal as a full-stack developer. As I navigate upper-division coursework and my minor in data science, I am especially interested in 
-                    pursuing classes involving AI and ML to learn how to best leverage data to drive insightful decision-making and develop 
-                    innovative solutions to complex problems. Since you've made it this far, thank you again for stopping by and please feel free to reach out and/or connect with me at one of the links on the left. Talk to you soon!
+                    and technology, exploring aerospace, app development, and machine learning, and interning at Chicago-based startup Glocal as a full-stack developer. As I navigate upper-division classes and my minor in data science, 
+                    <span style="color: #CD3c2a;"><b>I am especially interested in 
+                    pursuing coursework involving AI/ML to learn how to best leverage data to drive insightful decision-making and develop 
+                    innovative solutions to complex and relevant problems</b></span>. Thank you so much for stopping by, please feel free to reach out and/or connect with me at one of the links to the left. Talk to you soon!
                 </p>
+            </section>
+            <section id="education">
+                <h2 style="margin-top: -80px";>Education</h2>
+                <h4><span style="color: #CD3c2a;">University of California, Berkeley</span> &bull; 2022-26<br></h4>
+                <p style="margin-top: -17px";>Electrical Engineering and Computer Science (BS)<br></p>
+                <p style="margin-top: -12px;">Data Science (Minor)<br></p>
             </section>
             <section id="experience">
                 <h2 style="margin-top: -80px";>Experience</h2>
@@ -147,23 +151,17 @@
                  <span style="display: inline;"> &bull; <span style="font-weight: bold;">VTOL @ Berkeley</span> <i>(Sept. 2023 - Dec. 2023)</i></span>
                 <p style="margin-top: 5px";>Leveraged Python/Jupyter Notebooks to solve and/or model complex physical and mathematical equations and concepts including aerodynamics (drag, lift, Bernoulli’s), propulsion (thrust, power), control (stability, inertia, basic control theory), 
                     structural analysis (stress, strain, buckling), and energy (consumption, efficiency). Presented research to offer comprehensive analysis and 
-                    insight to help facilitate the preliminary development of their physical systems.</p>
+                    insight to help facilitate the preliminary development of the physical systems.</p>
                     <h4 style="display: inline;"><span style="color: #CD3c2a; font-weight: bold;">Research Assistant</span></h4>
                     <span style="display: inline;"> &bull; <span style="font-weight: bold;">Khalid Lab/Jadoo Technologies</span> <i>(Jan. 2023 - Sept. 2023)</i></span>
                 <p style="margin-top: 5px";>Worked under Dr. Waqas Khalid on a joint research product with UCSF building nanotechnology-based portable blood sampling devices. 
                 Contributed to the development of the team’s supervised machine learning model (PyTorch) trained on historical blood sample data to predict potential health conditions and recommend future diagnostic tests from the results of their devices.</p>
             </section>
-            <section id="education">
-                <h2 style="margin-top: -80px";>Education</h2>
-                <h4><span style="color: #CD3c2a;">University of California, Berkeley</span> &bull; 2022-26<br></h4>
-                <p style="margin-top: -17px";>Electrical Engineering and Computer Science (BS)<br></p>
-                <p style="margin-top: -12px;">Data Science (Minor)<br></p>
-            </section>
             <section id="projects">
                 <h2 style="margin-top: -80px";>Projects</h2>
                 <p><span style="color: #CD3c2a; font-weight: bold;">SIXT33N:</span> Utilized ML techniques (PCA, SVD) and C++ to build a voice-controlled model car with a microcontroller (Arduino), analog circuits, and PCBs; engineered op-amp and BJT circuits for closed-loop control logic, along with audio signal amplification and filtering circuits to support four voice commands.<br></p>
                 <p><span style="color: #CD3c2a; font-weight: bold;">ANN Network:</span> Wrote the RISC-V assembly code needed to run a simple artificial neural network (ANN) on the Venus RISC-V simulator, including the implementation of basic operations such as vector dot products, matrix-matrix multiplications, argmax, and activation functions, which I combined to load and execute a pre-trained network to classify handwritten digits from the MNIST benchmark set.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">CPU:</span> Built a fully functional, 32-bit CPU with a pipelined datapath in Logisim capable of running machine code converted from RISC-V assembly code.<br></p>
+                <p><span style="color: #CD3c2a; font-weight: bold;">CPU:</span> Built a fully functional, 32-bit CPU with a pipelined RISC-V datapath in Logisim capable of running machine code converted from RISC-V assembly code.<br></p>
                 <p><span style="color: #CD3c2a; font-weight: bold;">NGram:</span> Replicated Google’s Ngram Viewer in Java using HashMaps, Collections, Iterators, and the Princeton Algorithms Library for reading, parsing, and converting files to track history of word usage.<br></p>
                 <p><span style="color: #CD3c2a; font-weight: bold;">WordNet:</span> Built a visual and numerical model of hyponym and hypernym correlations and tracked word tree lineage in Java, using Directed Acyclic Graphs, HashSets, and ArrayLists, as well as algorithms including depth-first search graph traversal and weighted quick union.<br></p>
                 <p><span style="color: #CD3c2a; font-weight: bold;">2D World Generation:</span> Designed and implemented the game functionality, UI, and data storage of a 2D tile-based, user-interactive world exploration engine in Java that uses pseudo-random algorithms to generate custom worlds and gameplay.<br></p>
@@ -180,7 +178,6 @@
             </section>
         </div>
     </div>
-
     <script>
         var words = ["web development.", "software engineering.", "artificial intelligence.", "machine learning.", "research.", "data science."];
         var wordIndex = 0;
