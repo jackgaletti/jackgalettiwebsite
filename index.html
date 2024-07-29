@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack Galetti</title>
     <style>
+        :root {
+            --background-color: #f7f9fb;
+            --header-bg-color: #fff;
+            --primary-color: #4076de;
+        }
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #d8d6c7;
+            background-color: var(--background-color);
         }
         header {
-            background-color: #E6E6DA;
-            color: #CD3c2a;
+            background-color: var(--header-bg-color);
+            color: var(--primary-color);
             padding: 10px 30px;
             display: flex;
             justify-content: space-between;
@@ -31,7 +36,7 @@
             align-items: center;
         }
         nav a {
-            color: #CD3c2a;
+            color: var(--primary-color);
             text-decoration: none;
             padding: 0 20px;
             transition: all 0.3s ease;
@@ -99,10 +104,10 @@
             <section id="JackGaletti">
                 <img src="jackgaletti.jpg" alt="Jack Galetti">
                 <div>
-                    <h2>Hi! I'm <span style="color: #CD3c2a;">Jack Galetti</span>.</h2>
-                    <p>Aspiring software <span style="color: #CD3c2a;">engineer</span><br>and full-stack <span style="color: #CD3c2a;">developer</span>,<br>current <span style="color: #CD3c2a;">EECS student</span> at UC Berkeley.</p>
-                    <p>I am especially interested in and currently<br>pursuing <span id="typingAnimation" style="color: #CD3c2a;"></span></p>
-                    <p id="email" style="display:none;">You can reach me by email at <span style="color: #CD3c2a;">jackcgaletti@gmail.com</span></p>
+                    <h2>Hi! I'm <span style="color: var(--primary-color);">Jack Galetti</span>.</h2>
+                    <p>Aspiring software <span style="color: var(--primary-color);">engineer</span><br>and full-stack <span style="color: var(--primary-color);">developer</span>,<br>current <span style="color: var(--primary-color);">EECS student</span> at UC Berkeley.</p>
+                    <p>I am especially interested in and currently<br>pursuing <span id="typingAnimation" style="color: var(--primary-color);"></span></p>
+                    <p id="email" style="display:none;">You can reach me by email at <span style="color: var(--primary-color);">jackcgaletti@gmail.com</span></p>
                     <h4>Let's connect!</h4>
                     <div style="margin-top: -17px; display: flex;">
                         <a href="https://www.linkedin.com/in/jackgaletti" target="_blank">
@@ -130,51 +135,51 @@
                     across its various domains, both inside and outside of the classroom. I have engaged in a number of personal and extracurricular 
                     SWE-related positions throughout my time at Berkeley in an effort to find my specific interests and niche within the industry; this includes participating in research at the intersection of biomedicine 
                     and technology, exploring aerospace, app development, and machine learning, and interning at Chicago-based startup Glocal as a full-stack developer. As I navigate upper-division classes and my minor in data science, 
-                    <span style="color: #CD3c2a;"><b>I am especially interested in 
+                    <span style="color: var(--primary-color);"><b>I am especially interested in 
                     pursuing coursework involving AI/ML to learn how to best leverage data to drive insightful decision-making and develop 
                     innovative solutions to complex and relevant problems</b></span>. Thank you so much for stopping by, please feel free to reach out and/or connect with me at one of the links to the left. Talk to you soon!
                 </p>
             </section>
             <section id="education">
                 <h2 style="margin-top: -80px";>Education</h2>
-                <h4><span style="color: #CD3c2a;">University of California, Berkeley</span> &bull; 2022-26<br></h4>
+                <h4><span style="color: var(--primary-color);">University of California, Berkeley</span> &bull; 2022-26<br></h4>
                 <p style="margin-top: -17px";>Electrical Engineering and Computer Science (BS)<br></p>
                 <p style="margin-top: -12px;">Data Science (Minor)<br></p>
             </section>
             <section id="experience">
                 <h2 style="margin-top: -80px";>Experience</h2>
-                <h4 style="display: inline;"><span style="color: #CD3c2a; font-weight: bold;">Software Engineer Intern</span></h4>
+                <h4 style="display: inline;"><span style="color: var(--primary-color); font-weight: bold;">Software Engineer Intern</span></h4>
                 <span style="display: inline;"> &bull; <span style="font-weight: bold;">Glocal</span> <i>(Feb. 2024 - Aug. 2024)</i></span>
                 <p style="margin-top: 5px";>Helped migrate codebase from React Native to Swift to develop a native iOS application to significantly enhance performance and efficiency and optimize app functionality and user experience. Assisted in the preliminary development of Glocal’s AI model using data from pilot programs in London and Chicago to offer deliverable insight and analysis on community incentives to boost civic engagement.
                  Conducted and submitted rigorous, biweekly code reviews to maintain Glocal’s quality standards, objectives, and best practices, worked on bug fixes and performance enhancements to ensure a seamless user experience, and documented technical processes and developments for internal use and knowledge sharing.</p>
-                 <h4 style="display: inline;"><span style="color: #CD3c2a; font-weight: bold;">Research Software Engineer</span></h4>
+                 <h4 style="display: inline;"><span style="color: var(--primary-color); font-weight: bold;">Research Software Engineer</span></h4>
                  <span style="display: inline;"> &bull; <span style="font-weight: bold;">VTOL @ Berkeley</span> <i>(Sept. 2023 - Dec. 2023)</i></span>
                 <p style="margin-top: 5px";>Leveraged Python/Jupyter Notebooks to solve and/or model complex physical and mathematical equations and concepts including aerodynamics (drag, lift, Bernoulli’s), propulsion (thrust, power), control (stability, inertia, basic control theory), 
                     structural analysis (stress, strain, buckling), and energy (consumption, efficiency). Presented research to offer comprehensive analysis and 
                     insight to help facilitate the preliminary development of the physical systems.</p>
-                    <h4 style="display: inline;"><span style="color: #CD3c2a; font-weight: bold;">Research Assistant</span></h4>
+                    <h4 style="display: inline;"><span style="color: var(--primary-color); font-weight: bold;">Research Assistant</span></h4>
                     <span style="display: inline;"> &bull; <span style="font-weight: bold;">Khalid Lab/Jadoo Technologies</span> <i>(Jan. 2023 - Sept. 2023)</i></span>
                 <p style="margin-top: 5px";>Worked under Dr. Waqas Khalid on a joint research product with UCSF building nanotechnology-based portable blood sampling devices. 
                 Contributed to the development of the team’s supervised machine learning model (PyTorch) trained on historical blood sample data to predict potential health conditions and recommend future diagnostic tests from the results of their devices.</p>
             </section>
             <section id="projects">
                 <h2 style="margin-top: -80px";>Projects</h2>
-                <p><span style="color: #CD3c2a; font-weight: bold;">SIXT33N:</span> Utilized ML techniques (PCA, SVD) and C++ to build a voice-controlled model car with a microcontroller (Arduino), analog circuits, and PCBs; engineered op-amp and BJT circuits for closed-loop control logic, along with audio signal amplification and filtering circuits to support four voice commands.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">ANN Network:</span> Wrote the RISC-V assembly code needed to run a simple artificial neural network (ANN) on the Venus RISC-V simulator, including the implementation of basic operations such as vector dot products, matrix-matrix multiplications, argmax, and activation functions, which I combined to load and execute a pre-trained network to classify handwritten digits from the MNIST benchmark set.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">CPU:</span> Built a fully functional, 32-bit CPU with a pipelined RISC-V datapath in Logisim capable of running machine code converted from RISC-V assembly code.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">NGram:</span> Replicated Google’s Ngram Viewer in Java using HashMaps, Collections, Iterators, and the Princeton Algorithms Library for reading, parsing, and converting files to track history of word usage.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">WordNet:</span> Built a visual and numerical model of hyponym and hypernym correlations and tracked word tree lineage in Java, using Directed Acyclic Graphs, HashSets, and ArrayLists, as well as algorithms including depth-first search graph traversal and weighted quick union.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">2D World Generation:</span> Designed and implemented the game functionality, UI, and data storage of a 2D tile-based, user-interactive world exploration engine in Java that uses pseudo-random algorithms to generate custom worlds and gameplay.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">Scheme:</span> Implemented the core features for a lisp interpreter in Python using a recursive descent parser, utilizing lexical and syntactic analysis as well as input parsing.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">Arcade Games:</span> Built fully rendered replications of the classic puzzle games 2048 and Tetris in Java that incorporate user data storage for scores, responsive user controls through keyboard inputs (WASD, UDLR), and various Java data structures and algorithms for game logic.<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">Website:</span> Built using HTML and CSS, hosted on GitHub Pages. View the code <a href="https://github.com/jackgaletti/jackgalettiwebsite/tree/main" style="color: #CD3c2a; text-decoration: underline;" target="_blank">here</a>.</p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">SIXT33N:</span> Utilized ML techniques (PCA, SVD) and C++ to build a voice-controlled model car with a microcontroller (Arduino), analog circuits, and PCBs; engineered op-amp and BJT circuits for closed-loop control logic, along with audio signal amplification and filtering circuits to support four voice commands.<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">ANN Network:</span> Wrote the RISC-V assembly code needed to run a simple artificial neural network (ANN) on the Venus RISC-V simulator, including the implementation of basic operations such as vector dot products, matrix-matrix multiplications, argmax, and activation functions, which I combined to load and execute a pre-trained network to classify handwritten digits from the MNIST benchmark set.<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">CPU:</span> Built a fully functional, 32-bit CPU with a pipelined RISC-V datapath in Logisim capable of running machine code converted from RISC-V assembly code.<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">NGram:</span> Replicated Google’s Ngram Viewer in Java using HashMaps, Collections, Iterators, and the Princeton Algorithms Library for reading, parsing, and converting files to track history of word usage.<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">WordNet:</span> Built a visual and numerical model of hyponym and hypernym correlations and tracked word tree lineage in Java, using Directed Acyclic Graphs, HashSets, and ArrayLists, as well as algorithms including depth-first search graph traversal and weighted quick union.<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">2D World Generation:</span> Designed and implemented the game functionality, UI, and data storage of a 2D tile-based, user-interactive world exploration engine in Java that uses pseudo-random algorithms to generate custom worlds and gameplay.<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">Scheme:</span> Implemented the core features for a lisp interpreter in Python using a recursive descent parser, utilizing lexical and syntactic analysis as well as input parsing.<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">Arcade Games:</span> Built fully rendered replications of the classic puzzle games 2048 and Tetris in Java that incorporate user data storage for scores, responsive user controls through keyboard inputs (WASD, UDLR), and various Java data structures and algorithms for game logic.<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">Website:</span> Built using HTML and CSS, hosted on GitHub Pages. View the code <a href="https://github.com/jackgaletti/jackgalettiwebsite/tree/main" style="color: #CD3c2a; text-decoration: underline;" target="_blank">here</a>.</p>
 
             </section>
             <section id="skills">
                 <h2 style="margin-top: -80px";>Skills</h2>
-                <p><span style="color: #CD3c2a; font-weight: bold;">Languages:</span> Python, Java, C/C++, SQL, RISC-V, Swift, HTML, JavaScript, CSS<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">Developer Tools:</span> Git, Google Cloud, VS Code, IntelliJ, Xcode, Figma, SwiftUI<br></p>
-                <p><span style="color: #CD3c2a; font-weight: bold;">Libraries:</span> NumPy, Matplotlib, pandas, React, React Native</p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">Languages:</span> Python, Java, C/C++, SQL, RISC-V, Swift, HTML, JavaScript, CSS<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">Developer Tools:</span> Git, Google Cloud, VS Code, IntelliJ, Xcode, Figma, SwiftUI<br></p>
+                <p><span style="color: var(--primary-color); font-weight: bold;">Libraries:</span> NumPy, Matplotlib, pandas, React, React Native</p>
             </section>
         </div>
     </div>
