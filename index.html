@@ -264,6 +264,18 @@
         function sendEmail() {
             window.location.href = "mailto:jackcgaletti@gmail.com";
         }
+
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        function showMessageForMobile() {
+            if (isMobileDevice()) {
+                document.body.innerHTML = '<h2 style="text-align: center; margin-top: 50px;">Please visit this site on a desktop or laptop for the best experience.</h2>';
+            }
+        }
+
+        showMessageForMobile();
     </script>
 </body>
 </html>
