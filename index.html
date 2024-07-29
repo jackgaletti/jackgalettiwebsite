@@ -271,11 +271,14 @@
 
         function showMessageForMobile() {
             if (isMobileDevice()) {
-        document.body.innerHTML = `
-            <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;">
-                <h2>Hi there :) Please visit my website on a desktop or laptop for the best experience, thank you so much!</h2>
-            </div>`;
-    }
+                document.body.innerHTML = `
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; padding: 20px;">
+                    <h2 style="margin: 0;">Hi 👋</h2>
+                    <h2 style="margin: 0;">Please visit my website on a desktop or laptop for the best viewing experience.</h2>
+                    <h2 style="margin: 0;">Thanks so much!</h2>
+                    <h2 style="margin: 0;">-Jack :)</h2>
+                </div>`;
+            }
         }
 
         showMessageForMobile();
