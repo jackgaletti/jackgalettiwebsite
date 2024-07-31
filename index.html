@@ -78,6 +78,7 @@
             bottom: 0;
             width: 50%;
             overflow: auto;
+            padding-left: 25px;
         }
         .right-section {
             flex: 1;
@@ -87,16 +88,25 @@
         }
         .highlighted-name {
             font-family: 'DM Serif Display', serif;
-            font-size: 1.3em;
+            font-size: 1.6em;
             font-style: italic;
             color: var(--primary-color);
-            padding-left: 3px;
+            padding-left: 4px;
+            padding-right: 2px;
         }
         .container {
             display: flex;
-            align-items: center;
+            align-items: baseline;
             margin-bottom: 0;
         }
+        #typingContainer {
+            display: inline-block;
+            width: 250px; /* Adjust width as needed */
+            white-space: nowrap;
+            overflow: hidden;
+            vertical-align: bottom;
+        }
+
     </style>
 </head>
 <body>
@@ -122,7 +132,7 @@
                         <span>.</span>
                     </h2>
                     <p>Aspiring software <span style="color: var(--primary-color); margin-top: 0;">engineer</span><br>and full-stack <span style="color: var(--primary-color);">developer</span>,<br>current <span style="color: var(--primary-color);">EECS student</span> at UC Berkeley.</p>
-                    <p>I am especially interested in and currently<br>pursuing <span id="typingAnimation" style="color: var(--primary-color);"></span></p>
+                    <p>I am especially interested in and<br>currently pursuing <span id="typingContainer"><span id="typingAnimation" style="color: var(--primary-color);"></span></span></p>
                     <p id="email" style="display:none;">You can reach me by email at <span style="color: var(--primary-color);">jackcgaletti@gmail.com</span></p>
                     <h4>Let's connect!</h4>
                     <div style="margin-top: -17px; display: flex;">
